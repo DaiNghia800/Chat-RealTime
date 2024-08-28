@@ -1,0 +1,48 @@
+doctype html
+html
+  head 
+    meta(charset="UTF-8")
+    meta(name="viewport" content="width=device-width, initial-scale=1.0")
+    link(rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer")
+    link(rel="stylesheet" type="text/css" href="https://unpkg.com/file-upload-with-preview/dist/style.css")
+    link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/viewerjs/1.11.6/viewer.min.css")
+    link(rel="stylesheet", href="assets/css/style.css")
+    title Trang chủ
+  body 
+    div(class="chat-app")
+      header(class="header")
+        div(class="inner-logo")
+          a(href="index.html") Chat App
+        div(class="inner-actions")
+          a(href="login.html" button-login) Login     
+          a(href="register.html" button-register) Register  
+          a(href="" button-logout) Logout
+      div(class="chat")
+        div(class="inner-body")
+          div(class="inner-incoming")
+            div(class="inner-name") Em Yêu
+            div(class="inner-content") A ăn cơm chưa?
+          div(class="inner-outgoing")
+            div(class="inner-content") A ăn rồi!
+        div(class="inner-foot")
+          div(class="custom-file-container" data-upload-id="upload-images")
+          form(class="inner-form" action="")
+            input(type="text" name="content" placeholder="Type hear...")
+            span(class="button-icon")
+              i(class="fa-regular fa-face-smile")
+            label(for="file-upload-with-preview-upload-images" class="button-image")
+              i(class="fa-solid fa-image") 
+            button(class="button-plane")
+              i(class="fa-solid fa-paper-plane")
+          div(class="tooltip" role="tooltip")
+            emoji-picker(class="")    
+    script(type="module", src="https://cdn.jsdelivr.net/npm/emoji-picker-element@^1/index.js")   
+    script(src="https://unpkg.com/file-upload-with-preview/dist/file-upload-with-preview.iife.js") 
+    script(src="https://cdnjs.cloudflare.com/ajax/libs/viewerjs/1.11.6/viewer.min.js")     
+    script(type="module", src="assets/js/script.js")               
+
+
+
+            
